@@ -1,0 +1,117 @@
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "stacked",
+    "percent": 0.752083333333333,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1005,
+               "width": 1906,
+               "x": 2,
+               "y": 163
+            },
+            "name": "Run - ndbjs-webapp",
+            "percent": 0.5,
+            "swallows": [
+               {
+                   "class": "^jetbrains\\-idea$",
+                   "instance": "^sun\\-awt\\-X11\\-XFramePeer$",
+                   "title": "^Run\\ \\-\\ ndbjs\\-webapp$",
+                   "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splith",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "normal",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 1023,
+                       "width": 1906,
+                       "x": 2,
+                       "y": 145
+                    },
+                    "name": "Debug - ndbjs-webapp",
+                    "percent": null,
+                    "swallows": [
+                       {
+                          "class": "^jetbrains\\-idea$",
+                           "instance": "^sun\\-awt\\-X11\\-XFramePeer$",
+                           "title": "^Debug\\ \\-\\ ndbjs\\-webapp$",
+                           "transient_for": "^$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.247916666666667,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1059,
+               "width": 1906,
+               "x": 2,
+               "y": 109
+            },
+            "name": "Structure - ndbjs-webapp",
+            "percent": 0.5,
+            "swallows": [
+               {
+                   "class": "^jetbrains\\-idea$",
+                   "instance": "^sun\\-awt\\-X11\\-XFramePeer$",
+                   "title": "^Structure\\ \\-\\ ndbjs\\-webapp$",
+                   "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1095,
+               "width": 1906,
+               "x": 2,
+               "y": 73
+            },
+            "name": "Version Control - ndbjs-webapp",
+            "percent": 0.5,
+            "swallows": [
+               {
+                   "class": "^jetbrains\\-idea$",
+                   "instance": "^sun\\-awt\\-X11\\-XFramePeer$",
+                   "title": "^Version\\ Control\\ \\-\\ ndbjs\\-webapp$",
+                   "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
