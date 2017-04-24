@@ -13,7 +13,8 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-set $font FontAwesome 10
+set $font System San Francisco Display 10
+set $icon_font FontAwesome 10
 font pango:$font
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -255,7 +256,8 @@ bar {
     tray_output DVI-I-1-1
     tray_output HDMI1
     #status_command i3status -c ~/.config/i3/i3status.conf
-    font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+    #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+    font pango:$font, $icon_font
   colors {
     separator #586e75
     background #002b36
