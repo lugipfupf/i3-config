@@ -37,9 +37,14 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
+set $workspace_tasks "1 "
+set $workspace_browser "2 "
 set $workspace_console "3 "
 set $workspace_mail "4 "
+set $workspace_code2 "5 "
+set $workspace_code1 "6 "
 set $workspace_chat "7 "
+set $workspace_spotify "9 "
 
 set $screen_internal "DP1-1"
 set $screen_external_left "HDMI1"
@@ -117,27 +122,27 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
+bindsym $mod+1 workspace $workspace_tasks
+bindsym $mod+2 workspace $workspace_browser
 bindsym $mod+3 workspace $workspace_console
 bindsym $mod+4 workspace $workspace_mail
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
+bindsym $mod+5 workspace $workspace_code2
+bindsym $mod+6 workspace $workspace_code1
 bindsym $mod+7 workspace $workspace_chat
 bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
+bindsym $mod+9 workspace $workspace_spotify
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+1 move container to workspace $workspace_tasks
+bindsym $mod+Shift+2 move container to workspace $workspace_browser
 bindsym $mod+Shift+3 move container to workspace $workspace_console
 bindsym $mod+Shift+4 move container to workspace $workspace_mail
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+5 move container to workspace $workspace_code2
+bindsym $mod+Shift+6 move container to workspace $workspace_code1
 bindsym $mod+Shift+7 move container to workspace $workspace_chat
 bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+9 move container to workspace $workspace_spotify
 bindsym $mod+Shift+0 move container to workspace 10
 
 # less eye pain
@@ -178,7 +183,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-exec --no-startup-id "i3-msg 'workspace 5; append_layout ~/.config/i3/workspce-5-idea-tools.json'"
+# exec --no-startup-id "i3-msg 'workspace $workspace_code2; append_layout ~/.config/i3/workspce-5-idea-tools.json'"
 exec --no-startup-id clipit
 exec --no-startup-id nm-applet
 exec --no-startup-id thunderbird
@@ -203,15 +208,15 @@ bindsym XF86MonBrightnessDown   exec "xbacklight -10
 
 
 # Workspace screen placement
-workspace 1                  output $screen_external_left
-workspace 2                  output $screen_external_right
+workspace $workspace_tasks   output $screen_external_left
+workspace $workspace_browser output $screen_external_right
 workspace $workspace_console output $screen_external_left
 workspace $workspace_mail    output $screen_external_right
-workspace 5                  output $screen_external_left
-workspace 6                  output $screen_external_right
+workspace $workspace_code2   output $screen_external_left
+workspace $workspace_code1   output $screen_external_right
 workspace $workspace_chat    output $screen_external_left
 workspace 8                  output $screen_external_right
-workspace 9                  output $screen_external_left
+workspace $workspace_spotify output $screen_external_left
 workspace 0                  output $screen_external_right
 
 # mouse & focus
