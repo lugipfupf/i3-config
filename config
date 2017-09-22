@@ -183,6 +183,7 @@ exec --no-startup-id clipit
 exec --no-startup-id nm-applet
 exec --no-startup-id thunderbird
 exec --no-startup-id chrome
+exec --no-startup-id pasystray
 
 #  Volume control
 ## Increase/Decrease using pulse audio
@@ -240,7 +241,6 @@ for_window [class="^Nautilus$" instance="^file_progress$"] floating enable
 #############################################
 # W I N D O W S                             #
 #############################################
-assign [class="Pidgin"]      $workspace_chat
 assign [class="Thunderbird"] $workspace_mail
 assign [class="Firefox"]     $workspace_console
 
@@ -250,10 +250,10 @@ bar {
   status_command       i3status
     position           top
     workspace_buttons  yes
-    #status_command     i3status -c ~/.config/i3/i3status.conf
+#    status_command     i3status -c ~/.config/i3/i3status.conf
     tray_output HDMI1 
     #tray_output DVI-I-1-1 
-    #tray_output eDP1
+#    tray_output eDP1
     font               pango:$font, $icon_font
   colors {
     separator          #666666
