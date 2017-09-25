@@ -46,6 +46,7 @@ set $workspace_code1 "6 "
 set $workspace_chat "7 "
 set $workspace_firefox "8 "
 set $workspace_spotify "9 "
+set $workspace_security "10 "
 
 set $screen_internal "DP1-1"
 set $screen_external_left "HDMI1"
@@ -132,7 +133,7 @@ bindsym $mod+6 workspace $workspace_code1
 bindsym $mod+7 workspace $workspace_chat
 bindsym $mod+8 workspace $workspace_firefox
 bindsym $mod+9 workspace $workspace_spotify
-bindsym $mod+0 workspace 10
+bindsym $mod+0 workspace $workspace_security
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace_tasks
@@ -144,7 +145,7 @@ bindsym $mod+Shift+6 move container to workspace $workspace_code1
 bindsym $mod+Shift+7 move container to workspace $workspace_chat
 bindsym $mod+Shift+8 move container to workspace $workspace_firefox
 bindsym $mod+Shift+9 move container to workspace $workspace_spotify
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+0 move container to workspace $workspace_security
 
 # less eye pain
 exec --no-startup-id redshift-gtk
@@ -209,16 +210,16 @@ bindsym XF86MonBrightnessDown   exec "xbacklight -10
 
 
 # Workspace screen placement
-workspace $workspace_tasks   output $screen_external_left
-workspace $workspace_browser output $screen_external_right
-workspace $workspace_console output $screen_external_left
-workspace $workspace_mail    output $screen_external_right
-workspace $workspace_code2   output $screen_external_left
-workspace $workspace_code1   output $screen_external_right
-workspace $workspace_chat    output $screen_external_left
-workspace $workspace_firefox output $screen_external_right
-workspace $workspace_spotify output $screen_external_left
-workspace 0                  output $screen_external_right
+workspace $workspace_tasks    output $screen_external_left
+workspace $workspace_browser  output $screen_external_right
+workspace $workspace_console  output $screen_external_left
+workspace $workspace_mail     output $screen_external_right
+workspace $workspace_code2    output $screen_external_left
+workspace $workspace_code1    output $screen_external_right
+workspace $workspace_chat     output $screen_external_left
+workspace $workspace_firefox  output $screen_external_right
+workspace $workspace_spotify  output $screen_external_left
+workspace $workspace_security output $screen_external_right
 
 # mouse & focus
 focus_follows_mouse no
