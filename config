@@ -71,6 +71,8 @@ set $base0D #97bbf7
 set $base0E #c0b7f9
 set $base0F #fcc09e
 
+set $Locker i3lock -t -i '/home/bluginbuehl/nine-1920-1200.png' && sleep 1
+
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
 bindsym $mod+d exec rofi -show run -lines 15 -eh 1.5 -width 30 -padding 50 -opacity "75" -bw 0 -bc "$base01" -bg "$base02" -fg "$base07" -hlbg "$base01" -columns 1 -font "$font_mono" -hlfg "$base04" -location 2
@@ -193,6 +195,8 @@ exec --no-startup-id nm-applet
 exec --no-startup-id thunderbird
 exec --no-startup-id chrome
 exec --no-startup-id pasystray
+exec --no-startup-id feh --bg-scale ~/nine-1920-12010.png
+exec --no-startup-id xautolock -time 3 -locker "$Locker"
 
 #  Volume control
 ## Increase/Decrease using pulse audio
@@ -227,8 +231,6 @@ workspace $workspace_security output $screen_external_right
 focus_follows_mouse no
 mouse_warping none
 
-# LockScreen, copied from https://wiki.archlinux.org/index.php/i3#Shutdown.2C_reboot.2C_lock_screen
-set $Locker i3lock -i '/home/bluginbuehl/Pictures/seashore.jpg' && sleep 1
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id $Locker, mode "default"
