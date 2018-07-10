@@ -262,7 +262,7 @@ bar {
     position           top
     workspace_buttons  yes
     status_command     i3status -c ~/.config/i3/i3status.conf
-    tray_output HDMI1 
+    #tray_output HDMI1 
     #tray_output DVI-I-1-1 
     #tray_output eDP1
     font               pango:$font, $icon_font
