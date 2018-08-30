@@ -195,7 +195,7 @@ exec --no-startup-id ~/.screenlayout/dual_at_puzzle.sh
 exec --no-startup-id clipit
 exec --no-startup-id nm-applet
 exec --no-startup-id thunderbird
-exec --no-startup-id chrome
+exec --no-startup-id google-chrome
 exec --no-startup-id pasystray
 exec --no-startup-id feh --bg-scale ~/nine-1920-12010.png
 # exec --no-startup-id xautolock -time 3 -locker "$Locker"
