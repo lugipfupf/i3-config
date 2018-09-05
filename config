@@ -251,6 +251,10 @@ bindsym $mod+l mode "$mode_system"
 
 for_window [instance="keepassx"] floating enable
 for_window [class="^Nautilus$" instance="^file_progress$"] floating enable
+for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
+for_window [class="Paman" instance="paman"] floating enable
+for_window [class="Pavumeter" instance="pavumeter"] floating enable
+for_window [class="Pulseaudio-equalizer.py" instance="pulseaudio-equalizer.py"] floating enable
 
 #############################################
 # W I N D O W S                             #
